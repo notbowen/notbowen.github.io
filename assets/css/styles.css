@@ -6,10 +6,10 @@
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
-    --bg-color: #fcfcfc;
-    --primary-color: #5798fa;
-    --secondary-color: #ff7235;
-    --primary-shadow: #8b8eaf;
+    --bg-color: #3d3c3c;
+    --primary-color: #48dfff;
+    --secondary-color: #ff793c;
+    --primary-shadow: #95a68e;
     --secondary-shadow: #a17a69;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
@@ -120,4 +120,76 @@ nav ul li {
 .bio p {
     line-height: var(--line-height);
     padding: 0.3rem 0;
+}
+
+/* Skills Styling */
+.skills {
+    max-width: 68.75rem;
+    text-align: center;
+    margin: 2.5rem auto auto;
+}
+
+.skill-header {
+    margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+
+.icon {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+/* Certs Styling */
+.certificates {
+    padding: 32px 0;
+    margin-top: 2rem;
+}
+
+.certs-pic {
+    width: 65%;
+    height: 60%;
+}
+
+.certs-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.certs-header {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.cert-container {
+    text-align: center;
+    width: 21.875rem;
+    padding: 1rem;
+}
+
+.cert-title {
+    margin-bottom: var(--bottom-margin);
+}
+
+.cert-details {
+    margin-bottom: var(--bottom-margin);
+}
+
+.cert-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
 }
