@@ -205,9 +205,9 @@ nav ul li {
         background-color: var(--bg-color);
         flex-direction: column;
         top: 86px;
-        left: 40%;
+        left: 50%;
         width: 50%;
-        text-align: centre;
+        text-align: center;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
     }
@@ -253,8 +253,8 @@ nav ul li {
 /* For ultra small displays */
 @media screen and (max-width: 420px) {
     .hero img {
-        height: 18rem;
-        width: 18rem;
+        height: 15rem;
+        width: 15rem;
     }
     
     .bio {
