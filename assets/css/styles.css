@@ -196,7 +196,7 @@ nav ul li {
 
 /* Small device Styling */
 @media screen and (max-width: 720px) {
-    /* Nav Bar on small devices */
+    /* Nav Bar */
     nav {
         paddding: 1.5rem 1rem;
     }
@@ -205,9 +205,9 @@ nav ul li {
         background-color: var(--bg-color);
         flex-direction: column;
         top: 86px;
-        left: 10%;
-        width: 80%;
-        text-align: center;
+        left: 40%;
+        width: 50%;
+        text-align: centre;
         transform: translateX(120%);
         transition: transform 0.5s ease-in;
     }
@@ -221,18 +221,47 @@ nav ul li {
         transform: translateX(0);
     }
 
-    /* About me mobile */
+    /* About Me */
     .hero {
-        margin-top: -4rem;
+        margin-top: -1rem;
         flex-direction: column;
         gap: 0;
     }
     .hero img {
-        height: 37.5rem;
-        width: 30rem;
+        height: 20rem;
+        width: 20rem;
     }
     .bio {
-        margin-top: -7rem;
         width: 20.5rem;
+    }
+
+    /* Skill Section */
+    .icon {
+        width: 5.875rem;
+        height: 5.875rem;
+    }
+
+    /* Certs Section */
+    .certs-container {
+        flex-direction: column;
+    }
+    .cert-container {
+        width: 20.875rem;
+    }
+}
+
+/* For ultra small displays */
+@media screen and (max-width: 420px) {
+    .hero img {
+        height: 37.5rem;
+        width: 23rem;
+    }
+    
+    .bio {
+        width: 18.3rem;
+    }
+
+    .cert-container {
+        width: 17.875rem;
     }
 }
