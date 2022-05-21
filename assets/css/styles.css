@@ -45,6 +45,16 @@ body {
     font-family: var(--font-family);
 }
 
+/* Page Transitions */
+.transition-fade {
+    opacity: 1;
+    transition: 0.5s;
+}
+
+html.is-animating .transition-fade {
+    opacity: 0;
+}
+
 /* Nav Bar Styling */
 nav {
     position: sticky;

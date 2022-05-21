@@ -1,3 +1,6 @@
+// Page Transition Class
+const swup = new Swup();
+
 // Nav hamburger code
 const burger = document.querySelector("#burger-menu");
 const ul = document.querySelector("nav ul");
