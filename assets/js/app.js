@@ -1,4 +1,4 @@
-// Page Transition Class
+// Page Transition
 const options = {
     linkSelector:
         'a[href^="' +
@@ -20,8 +20,20 @@ burger.addEventListener("click", () => {
 // Hide burger when select
 const navLink = document.querySelectorAll(".nav_link");
 
-navLink.forEach((link) => 
-    link.addEventListener("click", () => {
-        ul.classList.remove("show");
-    })         
+navLink.forEach((link) => {
+        link.addEventListener("click", () => {
+            ul.classList.remove("show");
+        })
+    }
 );
+
+// Change active class after page transition
+document.addEventListener('swup:contentReplaced', () => {
+    navLink.forEach((link) => {
+        if (window.location.href === link.href) {
+            link.classList.add("active");
+        } else {
+            link.classList.remove("active");
+        }
+    })
+})
