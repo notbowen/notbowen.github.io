@@ -192,6 +192,10 @@ nav ul li {
     padding: 1rem;
 }
 
+.cert-container p {
+    padding: 0.4rem;
+}
+
 .cert-title {
     margin-bottom: var(--bottom-margin);
 }
