@@ -1,13 +1,17 @@
 <!DOCTYPE html>
+<!--suppress HtmlUnknownAnchorTarget -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hu Bowen | Certificates</title>
-    
+
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css"/>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
@@ -31,6 +35,18 @@
         </button>
     </nav>
 
+    <!-- Read More / Read Less Handler -->
+    <script type="text/javascript">
+        function readMoreLess(textToShow, btn) {
+            btn.click(function(){
+                var readmore = textToShow;
+                var aText = readmore.is(':visible') ? 'Read More ▼' : 'Read Less ▲';
+                $(this).text(aText);
+                readmore.slideToggle();
+            });
+        }
+    </script>
+
     <!-- Transition Handler -->
     <main id="swup" class="transition-fade">
         <!-- Certificates -->
@@ -42,13 +58,30 @@
                     <img src="assets/images/certs/NOI.jpeg" alt="NOI" loading="lazy" class="certs-pic"/>
                     <h3 class="cert-title">NOI 2022</h3>
                     <p class="cert-details">
-                        In February 2022, I attended the 25th National Olympiad of Informatics hosted by NUS School of Computing.
-                        I was close to a Bronze medal, and I just needed 5 more points to get it :(
-                        <br><br>
-                        However, I had learnt a lot about C++ from preparing for this olympiad, such as different algorithms
-                        like binary search and greedy, time complexity, how different data types such as a vector or deque worked
-                        and learnt about pointers.
+                        I attended the National Olympiad of Informatics in February 2022, hosted by NUS School of Computing.
+                        I gained a more in-depth knowledge of C++, along with a better understanding of how software internals worked.
                     </p>
+                    <ul id="readmore-noi" class="hidden-more">
+                        <li>I learnt:</li>
+                        <li>Different Data Types
+                            <ul>
+                                <li>Vectors</li>
+                                <li>Linked Lists</li>
+                                <li>Maps</li>
+                                <li>Pointers</li>
+                            </ul>
+                        </li>
+                        <li>Efficient Algorithms such as Binary Search, Quicksort, Hashtable Lookups</li>
+                    </ul>
+                    <br><br>
+                    <a class="read-more" id="a-noi">Read More ▼</a>
+
+                    <script type="text/javascript">
+                        readMoreLess($("#readmore-noi"), $("#a-noi"));
+                        document.addEventListener("swup:contentReplaced", function () {
+                            readMoreLess($("#readmore-noi"), $("#a-noi"));
+                        })
+                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
@@ -62,6 +95,19 @@
                         It was a great experience, and I learned a lot about image metadata and steganography,
                         and how they can be used to hide information :D
                     </p>
+
+                    <p id="readmore-np" class="hidden-more">
+                        Test test test test
+                    </p>
+                    <br><br>
+                    <a class="read-more" id="a-np">Read More ▼</a>
+
+                    <script type="text/javascript">
+                        readMoreLess($("#readmore-np"), $("#a-np"));
+                        document.addEventListener("swup:contentReplaced", function () {
+                            readMoreLess($("#readmore-np"), $("#a-np"));
+                        })
+                    </script>
                 </div>
             </div>
 
@@ -73,29 +119,67 @@
                         CTF.SG is a Capture the Flag competition focusing on areas such as Web,
                         Reverse Engineering, Cryptography et cetera. My team and I secured 40th place, with a score of 1782.
                         I learnt a lot about how hashes worked and even used MD5 magic hashes to get one of
-                        the flags.
+                        the flags. Check our solutions out <a href="https://gist.github.com/wHo69/78b3a89e1e554e4aa8acd1f747c361bf">here!</a>
                     </p>
-                    <a href="https://gist.github.com/wHo69/78b3a89e1e554e4aa8acd1f747c361bf">Check our solutions out</a>
+
+                    <p id="readmore-ctfsg" class="hidden-more">
+                        Test test test test
+                    </p>
+                    <br><br>
+                    <a class="read-more" id="a-ctfsg">Read More ▼</a>
+
+                    <script type="text/javascript">
+                        readMoreLess($("#readmore-ctfsg"), $("#a-ctfsg"));
+                        document.addEventListener("swup:contentReplaced", function () {
+                            readMoreLess($("#readmore-ctfsg"), $("#a-ctfsg"));
+                        })
+                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
-                        <img src="assets/images/certs/YCEP_Bowen-cropped.png" alt="YCEP" loading="lazy" class="certs-pic"/>
-                        <h3 class="cert-title">NYP YCEP</h3>
-                        <p class="cert-details">
-                            This was the first CTF I had attended, conducted by NYP, and I finished in the top 15.
-                            I had learnt many new skills, such as the existence of robots.txt, basics of web servers,
-                            CVEs, steganography and so much more.
-                        </p>
+                    <img src="assets/images/certs/YCEP_Bowen-cropped.png" alt="YCEP" loading="lazy" class="certs-pic"/>
+                    <h3 class="cert-title">NYP YCEP</h3>
+                    <p class="cert-details">
+                        This was the first CTF I had attended, conducted by NYP, and I finished in the top 15.
+                        I had learnt many new skills, such as the existence of robots.txt, basics of web servers,
+                        CVEs, steganography and so much more.
+                    </p>
+
+                    <p id="readmore-ycep" class="hidden-more">
+                        Test test test test
+                    </p>
+                    <br><br>
+                    <a class="read-more" id="a-ycep">Read More ▼</a>
+
+                    <script type="text/javascript">
+                        readMoreLess($("#readmore-ycep"), $("#a-ycep"));
+                        document.addEventListener("swup:contentReplaced", function () {
+                            readMoreLess($("#readmore-ycep"), $("#a-ycep"));
+                        })
+                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
-                        <img src="assets/images/certs/Bowen_THC2021_Cert-1.png" alt="THC CTF" loading="lazy" class="certs-pic"/>
-                        <h3 class="cert-title">CSA-Elastic THC 2021</h3>
-                        <p class="cert-details">
-                            Threat Hunting Challenge 2021 was a Blue team CTF challenge, organised by CSA and Elastic.
-                            It taught me how to use Kibana and Elasticsearch to detect cyber threats, and I am proud
-                            to say that I made it to the finals :D
-                        </p>
+                    <img src="assets/images/certs/Bowen_THC2021_Cert-1.png" alt="THC CTF" loading="lazy" class="certs-pic"/>
+                    <h3 class="cert-title">CSA-Elastic THC 2021</h3>
+                    <p class="cert-details">
+                        Threat Hunting Challenge 2021 was a Blue team CTF challenge, organised by CSA and Elastic.
+                        It taught me how to use Kibana and Elasticsearch to detect cyber threats, and I am proud
+                        to say that I made it to the finals :D
+                    </p>
+
+                    <p id="readmore-thc" class="hidden-more">
+                        Test test test test
+                    </p>
+                    <br><br>
+                    <a class="read-more" id="a-thc">Read More ▼</a>
+
+                    <script type="text/javascript">
+                        readMoreLess($("#readmore-thc"), $("#a-thc"));
+                        document.addEventListener("swup:contentReplaced", function () {
+                            readMoreLess($("#readmore-thc"), $("#a-thc"));
+                        })
+                    </script>
                 </div>
             </div>
 
@@ -108,6 +192,19 @@
                         Crypto, Forensics, Pwn, Reverse Engineering, Web and Steganography. My main takeaway from this
                         competition was how image steganography works.
                     </p>
+
+                    <p id="readmore-ac" class="hidden-more">
+                        Test test test test
+                    </p>
+                    <br><br>
+                    <a class="read-more" id="a-ac">Read More ▼</a>
+
+                    <script type="text/javascript">
+                        readMoreLess($("#readmore-ac"), $("#a-ac"));
+                        document.addEventListener("swup:contentReplaced", function () {
+                            readMoreLess($("#readmore-ac"), $("#a-ac"));
+                        })
+                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
@@ -118,6 +215,19 @@
                         of cyber-security, such as Operating Systems, Recon, Metasploit et cetera. It deepened my understanding
                         of the Linux operating system and OS basics such as the shell and PATH.
                     </p>
+
+                    <p id="readmore-aycep" class="hidden-more">
+                        Test test test test
+                    </p>
+                    <br><br>
+                    <a class="read-more" id="a-aycep">Read More ▼</a>
+
+                    <script type="text/javascript">
+                        readMoreLess($("#readmore-aycep"), $("#a-aycep"));
+                        document.addEventListener("swup:contentReplaced", function () {
+                            readMoreLess($("#readmore-aycep"), $("#a-aycep"));
+                        })
+                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
@@ -130,16 +240,29 @@
                         <br><br>
                         As a final project, my team and I made a "story telling bot", which used deepai's text generator
                         via their API to generate stories based off user input :D
+                        <br><br>
+                        The GitHub Repo can be found <a href="https://github.com/junjayng1508/BBCSAIWinpetition2021Team2_icantfindaname.py">here!</a>
                     </p>
 
-                    <a href="https://github.com/junjayng1508/BBCSAIWinpetition2021Team2_icantfindaname.py">The GitHub Repo can be found here!</a>
+                    <p id="readmore-bbcs" class="hidden-more">
+                        Test test test test
+                    </p>
+                    <br><br>
+                    <a class="read-more" id="a-bbcs">Read More ▼</a>
+
+                    <script type="text/javascript">
+                        readMoreLess($("#readmore-bbcs"), $("#a-bbcs"));
+                        document.addEventListener("swup:contentReplaced", function () {
+                            readMoreLess($("#readmore-bbcs"), $("#a-bbcs"));
+                        })
+                    </script>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <!-- Script Sources -->
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script> 
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script src="assets/js/app.js"></script>
 
     <!-- Ion icons scripts -->
