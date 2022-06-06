@@ -28,10 +28,6 @@ html {
     box-sizing: border-box;
 }
 
-ul {
-    list-style-type: none;
-}
-
 a {
     text-decoration: none;
     color: var(--primary-color);
@@ -88,6 +84,7 @@ nav a:hover {
 }
 
 nav ul {
+    list-style-type: none;
     display: flex;
     gap: 1.9rem;
 }
@@ -173,7 +170,7 @@ nav ul li {
 
 .certs-pic {
     width: 65%;
-    height: 60%;
+    height: 53.5%;
 }
 
 .certs-container {
@@ -190,10 +187,27 @@ nav ul li {
 .cert-container {
     text-align: center;
     width: 21.875rem;
+    overflow: hidden;
+    position: relative;
 }
 
 .cert-container p {
     padding: 0.4rem;
+    text-align: justify;
+}
+
+.cert-container ul {
+    text-align: left;
+    padding-left: 21px;
+}
+
+.cert-container a {
+    color: #2ebef6;
+    transition: var(--transition);
+}
+
+.cert-container a:hover {
+    color: #ff793c;
 }
 
 .cert-title {
@@ -210,6 +224,21 @@ nav ul li {
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+}
+
+.cert-container .read-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.hidden-more {
+    display: none;
 }
 
 /* Small device Styling */
