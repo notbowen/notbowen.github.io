@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/css/styles.css"/>
 
     <!-- Scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
@@ -35,20 +35,9 @@
         </button>
     </nav>
 
-    <!-- Read More / Read Less Handler -->
-    <script type="text/javascript">
-        function readMoreLess(textToShow, btn) {
-            btn.click(function(){
-                var readmore = textToShow;
-                var aText = readmore.is(':visible') ? 'Read More ▼' : 'Read Less ▲';
-                $(this).text(aText);
-                readmore.slideToggle();
-            });
-        }
-    </script>
-
     <!-- Transition Handler -->
     <main id="swup" class="transition-fade">
+
         <!-- Certificates -->
         <section class="certificates" id="certs">
             <h2 class="certs-header">Events & Certificates</h2>
@@ -75,13 +64,6 @@
                     </ul>
                     <br><br>
                     <a class="read-more" id="a-noi">Read More ▼</a>
-
-                    <script type="text/javascript">
-                        readMoreLess($("#readmore-noi"), $("#a-noi"));
-                        document.addEventListener("swup:contentReplaced", function () {
-                            readMoreLess($("#readmore-noi"), $("#a-noi"));
-                        })
-                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
@@ -101,13 +83,6 @@
                     </p>
                     <br><br>
                     <a class="read-more" id="a-np">Read More ▼</a>
-
-                    <script type="text/javascript">
-                        readMoreLess($("#readmore-np"), $("#a-np"));
-                        document.addEventListener("swup:contentReplaced", function () {
-                            readMoreLess($("#readmore-np"), $("#a-np"));
-                        })
-                    </script>
                 </div>
             </div>
 
@@ -127,13 +102,6 @@
                     </p>
                     <br><br>
                     <a class="read-more" id="a-ctfsg">Read More ▼</a>
-
-                    <script type="text/javascript">
-                        readMoreLess($("#readmore-ctfsg"), $("#a-ctfsg"));
-                        document.addEventListener("swup:contentReplaced", function () {
-                            readMoreLess($("#readmore-ctfsg"), $("#a-ctfsg"));
-                        })
-                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
@@ -150,13 +118,6 @@
                     </p>
                     <br><br>
                     <a class="read-more" id="a-ycep">Read More ▼</a>
-
-                    <script type="text/javascript">
-                        readMoreLess($("#readmore-ycep"), $("#a-ycep"));
-                        document.addEventListener("swup:contentReplaced", function () {
-                            readMoreLess($("#readmore-ycep"), $("#a-ycep"));
-                        })
-                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
@@ -173,13 +134,6 @@
                     </p>
                     <br><br>
                     <a class="read-more" id="a-thc">Read More ▼</a>
-
-                    <script type="text/javascript">
-                        readMoreLess($("#readmore-thc"), $("#a-thc"));
-                        document.addEventListener("swup:contentReplaced", function () {
-                            readMoreLess($("#readmore-thc"), $("#a-thc"));
-                        })
-                    </script>
                 </div>
             </div>
 
@@ -198,13 +152,6 @@
                     </p>
                     <br><br>
                     <a class="read-more" id="a-ac">Read More ▼</a>
-
-                    <script type="text/javascript">
-                        readMoreLess($("#readmore-ac"), $("#a-ac"));
-                        document.addEventListener("swup:contentReplaced", function () {
-                            readMoreLess($("#readmore-ac"), $("#a-ac"));
-                        })
-                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
@@ -221,13 +168,6 @@
                     </p>
                     <br><br>
                     <a class="read-more" id="a-aycep">Read More ▼</a>
-
-                    <script type="text/javascript">
-                        readMoreLess($("#readmore-aycep"), $("#a-aycep"));
-                        document.addEventListener("swup:contentReplaced", function () {
-                            readMoreLess($("#readmore-aycep"), $("#a-aycep"));
-                        })
-                    </script>
                 </div>
 
                 <div class="cert-container cert-card animate__animated animate__pulse">
@@ -249,13 +189,6 @@
                     </p>
                     <br><br>
                     <a class="read-more" id="a-bbcs">Read More ▼</a>
-
-                    <script type="text/javascript">
-                        readMoreLess($("#readmore-bbcs"), $("#a-bbcs"));
-                        document.addEventListener("swup:contentReplaced", function () {
-                            readMoreLess($("#readmore-bbcs"), $("#a-bbcs"));
-                        })
-                    </script>
                 </div>
             </div>
         </section>

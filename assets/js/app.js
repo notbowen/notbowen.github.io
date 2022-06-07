@@ -27,8 +27,29 @@ navLink.forEach((link) => {
     }
 );
 
-// Change active class after page transition
+// Function to expand/close the read more
+function readMoreLess(textToShow, btn) {
+    btn.click(function () {
+        var readmore = textToShow;
+        var aText = readmore.is(':visible') ? 'Read More ▼' : 'Read Less ▲';
+        $(this).text(aText);
+        readmore.slideToggle();
+    });
+}
+
+// Hook functions to buttons
+readMoreLess($("#readmore-noi"), $("#a-noi"));
+readMoreLess($("#readmore-np"), $("#a-np"));
+readMoreLess($("#readmore-ctfsg"), $("#a-ctfsg"));
+readMoreLess($("#readmore-ycep"), $("#a-ycep"));
+readMoreLess($("#readmore-thc"), $("#a-thc"));
+readMoreLess($("#readmore-ac"), $("#a-ac"));
+readMoreLess($("#readmore-aycep"), $("#a-aycep"));
+readMoreLess($("#readmore-bbcs"), $("#a-bbcs"));
+
+// Every time swup transitions
 document.addEventListener('swup:contentReplaced', () => {
+    // Change active class after page transition
     navLink.forEach((link) => {
         if (window.location.href === link.href) {
             link.classList.add("active");
@@ -36,6 +57,16 @@ document.addEventListener('swup:contentReplaced', () => {
             link.classList.remove("active");
         }
     })
+
+    // Rehook function to buttons on page reload
+    readMoreLess($("#readmore-noi"), $("#a-noi"));
+    readMoreLess($("#readmore-np"), $("#a-np"));
+    readMoreLess($("#readmore-ctfsg"), $("#a-ctfsg"));
+    readMoreLess($("#readmore-ycep"), $("#a-ycep"));
+    readMoreLess($("#readmore-thc"), $("#a-thc"));
+    readMoreLess($("#readmore-ac"), $("#a-ac"));
+    readMoreLess($("#readmore-aycep"), $("#a-aycep"));
+    readMoreLess($("#readmore-bbcs"), $("#a-bbcs"));
 })
 
 
