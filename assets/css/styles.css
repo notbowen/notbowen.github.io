@@ -11,6 +11,7 @@
     --secondary-color: #ff793c;
     --primary-shadow: #95a68e;
     --secondary-shadow: #a17a69;
+    --top-margin: 0.3rem;
     --bottom-margin: 0.5rem;
     --bottom-margin-2: 1rem;
     --line-height: 1.7rem;
@@ -169,8 +170,8 @@ nav ul li {
 }
 
 .certs-pic {
-    width: 65%;
-    height: 53.5%;
+    width: 95%;
+    height: 73.5%;
 }
 
 .certs-container {
@@ -199,6 +200,7 @@ nav ul li {
 .cert-container ul {
     text-align: left;
     padding-left: 21px;
+    margin-bottom: 15px;
 }
 
 .cert-container a {
@@ -211,10 +213,7 @@ nav ul li {
 }
 
 .cert-title {
-    margin-bottom: var(--bottom-margin);
-}
-
-.cert-details {
+    margin-top: var(--top-margin);
     margin-bottom: var(--bottom-margin);
 }
 
@@ -232,8 +231,7 @@ nav ul li {
     left: 0;
     width: 100%;
     text-align: center;
-    margin: 0;
-    padding: 30px 0;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
