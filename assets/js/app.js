@@ -39,11 +39,12 @@ function readMoreLess(textToShow, btn) {
 
 // Hook functions to buttons
 readMoreLess($("#readmore-noi"), $("#a-noi"));
-readMoreLess($("#readmore-np"), $("#a-np"));
+readMoreLess($("#readmore-shopee"), $("#a-shopee"));
+readMoreLess($("#readmore-seetf"), $("#a-seetf"));
 readMoreLess($("#readmore-ctfsg"), $("#a-ctfsg"));
 readMoreLess($("#readmore-ycep"), $("#a-ycep"));
 readMoreLess($("#readmore-thc"), $("#a-thc"));
-readMoreLess($("#readmore-ac"), $("#a-ac"));
+readMoreLess($("#readmore-np"), $("#a-np"));
 readMoreLess($("#readmore-aycep"), $("#a-aycep"));
 readMoreLess($("#readmore-bbcs"), $("#a-bbcs"));
 
@@ -60,11 +61,12 @@ document.addEventListener('swup:contentReplaced', () => {
 
     // Rehook function to buttons on page reload
     readMoreLess($("#readmore-noi"), $("#a-noi"));
-    readMoreLess($("#readmore-np"), $("#a-np"));
+    readMoreLess($("#readmore-shopee"), $("#a-shopee"));
+    readMoreLess($("#readmore-seetf"), $("#a-seetf"));
     readMoreLess($("#readmore-ctfsg"), $("#a-ctfsg"));
     readMoreLess($("#readmore-ycep"), $("#a-ycep"));
     readMoreLess($("#readmore-thc"), $("#a-thc"));
-    readMoreLess($("#readmore-ac"), $("#a-ac"));
+    readMoreLess($("#readmore-np"), $("#a-np"));
     readMoreLess($("#readmore-aycep"), $("#a-aycep"));
     readMoreLess($("#readmore-bbcs"), $("#a-bbcs"));
 })
