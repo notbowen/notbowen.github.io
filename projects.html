@@ -12,7 +12,6 @@
     <!-- Scripts -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-
     <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
 
@@ -42,8 +41,9 @@
             <h2 class="projects-header">My Projects</h2>
 
             <div class="project-container animate__animated animate__fadeIn">
-                <div class="project-thumbnail"">
+                <div class="project-thumbnail">
                     <img src="/assets/images/projects/SimpleOS.png" alt="Simple OS"/>
+                    <img src="/assets/images/projects/SimpleOS_Snake.png" alt="Snake on OS"/>
                     <button class="button" onclick="window.location.href='https://github.com/wHo69/SimpleOS'"><object data="/assets/images/github.svg" width="20" height="20" style="padding-right: 5px; display: inline-block; vertical-align: middle;"></object><span>View the project on GitHub!</span></a>
                 </div>
                 <div class="project-content project-card">
@@ -60,8 +60,10 @@
                     <strong>Features:</strong>
                     <ul>
                         <li>Printing to screen</li>
-                        <li>3 simple shell commands, echo, cls and end</li>
+                        <li>Snake Game</li>
+                        <li>4 simple shell commands, echo, cls, end and snake</li>
                         <li>Echo accepts variable length arguments</li>
+                        <li>Time.sleep using the PIT, pseudo-random numbers using linear congruential generators</li>
                     </ul>
 
                     <br>
@@ -71,8 +73,37 @@
                         <li>Simple assembly commands, mov, push, pop</li>
                         <li>Logic in assembly: cmp, je, jne</li>
                         <li>Functions in assembly: loading arguments into registers, jmp and ret</li>
-                        <li>Bootsector and BIOS interrupts: e.g. printing to screen and reading from disk</li>
+                        <li>Bootsector and BIOS functions: e.g. printing to screen and reading from disk</li>
+                        <li>Interrupts, Programmable Interval Timers, Keyboard inputs</li>
                     </ul>
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="project-container animate__animated animate__fadeIn">
+                <div class="project-thumbnail">
+                    <img src="/assets/images/projects/CCA_Website.png" alt="NCC Website"/>
+                    <img src="/assets/images/projects/CCA_Website_2.png" alt="NCC Updater"/>
+                    <button class="button" onclick="window.location.href='https://sites.google.com/ctss.edu.sg/ct-ncc/home'"><span>View the NCC website here!</span></a>
+                </div>
+
+                <div class="project-content project-card">
+                    <h3 class="project-title">CCA Website</h3>
+                    <p>
+
+                        <strong>Description:</strong><br>
+                        My CCA needed a website for our school open house, and our teacher in charge chose my friends and me to accomplish this task.
+                        It was a great experience and I got closer with my friends by working on the site together. I learnt a lot about collaborating
+                        on a project, and I am sure this will be useful in the future. I also wrote a Python Flask app to allow our training info to be
+                        updated more easily! It can be found <a href="https://NCCTrainingUpdater.hubowen.repl.co">here!</a>
+
+                        <br><br>
+
+                        <strong>Python Flask Server:</strong>
+                        <ul>
+                            <li></li>
+                        </ul>
 
                     </p>
                 </div>
