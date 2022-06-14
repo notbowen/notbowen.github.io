@@ -181,6 +181,15 @@ nav ul li {
     padding: 0.3rem 0;
 }
 
+.bio a {
+    color: #2ebef6;
+    transition: var(--transition);
+}
+
+.bio a:hover {
+    color: #ff793c;
+}
+
 /* Skills Styling */
 .skills {
     max-width: 68.75rem;
