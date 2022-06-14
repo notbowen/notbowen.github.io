@@ -335,10 +335,9 @@ nav ul li {
 
 .project-thumbnail img {
     width: 60%;
-    height: 60%;
+    height: auto;
     border-radius: 10px;
 }
-
 
 .project-content ul {
     padding-left: 20px;
