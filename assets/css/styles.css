@@ -391,6 +391,15 @@ nav ul li {
     position: relative;
 }
 
+.text a {
+    color: #2ebef6;
+    transition: var(--transition);
+}
+
+.text a:hover {
+    color: #ff793c;
+}
+
 .image{
     background-color:tomato;
     height: 120px;
