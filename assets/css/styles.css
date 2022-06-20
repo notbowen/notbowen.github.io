@@ -406,7 +406,7 @@ nav ul li {
     width: 120px;
     border-radius: 50%;
     border: 5px solid rgb(0, 0, 0);
-    background:no-repeat center/cover url(https://clementitownsec.moe.edu.sg/qql/slot/u534/contactus/All%20Staff/Mr%20Chia%20Chun%20Keong.jpg);
+    background:no-repeat center/cover url(/assets/images/Mr_Chia.jpg);
     position: absolute;
     top: -50%;
     left: 50%;
