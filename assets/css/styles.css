@@ -526,6 +526,11 @@ nav ul li {
         margin: 0;
         margin-top: 10px;
     }
+
+    /* Testimonials */
+    .testimonial-container {
+        flex-direction: column;
+    }
 }
 
 /* For ultra small displays */
