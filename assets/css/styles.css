@@ -404,7 +404,7 @@ nav ul li {
     color: #ff793c;
 }
 
-.image{
+.image { /* Mr Chia */
     background-color:tomato;
     height: 120px;
     width: 120px;
@@ -418,15 +418,30 @@ nav ul li {
     display:flex;
     justify-content:center;
 }
+
+.image_2 { /* Mr Kamal */
+    background-color:tomato;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    background:no-repeat center/cover url(/assets/images/Mr_Kamal.jpg);
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    display:flex;
+    justify-content:center;
+}
   
-.footer{
+.footer {
     background: linear-gradient(90deg, #000428 0%, #004e92 100%);
     height: 140px;
     border-radius: 0 0 10px 10px;
     position:relative;
 }
   
-.quote{
+.quote {
     font-size: 400%;
     float: right;
     opacity: .1;
@@ -434,7 +449,7 @@ nav ul li {
     color:#4D3FA3;
 }
   
-.person{
+.person {
     color:white;
     position: absolute;
     top: 50%;
@@ -447,7 +462,7 @@ nav ul li {
     margin-top: 20px;
 }
 
-.position{
+.position {
     color:white;
     position: absolute;
     top: 70%;
