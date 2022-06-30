@@ -368,10 +368,14 @@ nav ul li {
     margin-bottom: 1rem;
 }
 
-.testimonial-container {
+.testimonials-container {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.testimonial-container {
+    margin: 10px;
 }
 
 .testimonial-card{
@@ -528,7 +532,7 @@ nav ul li {
     }
 
     /* Testimonials */
-    .testimonial-container {
+    .testimonials-container {
         flex-direction: column;
     }
 }
