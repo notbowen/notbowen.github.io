@@ -6,7 +6,7 @@ let mainBox = document.querySelector('.main_box')
 
 setInterval(function(){
 
-    let UpcomingDate = new Date('14 October 2022 12:00:00 AM');
+    let UpcomingDate = new Date('17 October 2022 12:00:00 AM');
     let NowDate = new Date();
     let differanceTime  = Math.floor((UpcomingDate-NowDate)/1000)
     
